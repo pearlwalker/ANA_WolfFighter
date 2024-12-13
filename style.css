@@ -1,0 +1,78 @@
+.containflex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 740px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#contentbox {
+    width: 740px;
+    height: 500px;
+    border: 1px black solid;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 10% 40% 1% 45% 4%;
+    grid-template-rows: 25% 25% 25% 25%;
+    margin-bottom: 0.5rem;
+}
+
+#ana_image {
+    display: grid;
+    grid-area: 3 /2 / 4/ 3;
+    width: 100px;
+}
+
+body {
+    background-image: url("media/patterns/pattern2.png");
+    background-size: 75px;
+}
+
+header {
+    background-image: url("media/patterns/pattern1.png");
+    align-content: center;
+    background-size: 100px;
+    width: 740px;
+    color: crimson;
+    font-size: 1rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.25rem;
+}
+
+button {
+    height: 80px;
+    width: 370px;
+    margin: auto;
+}
+
+footer {
+    background-image: url("media/patterns/pattern3.png");
+    width: 740px;
+    border: 1px solid black;
+}
+
+/**Google Fonts CSS*/
+.rubik-distressed-regular {
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-vinyl-regular {
+    font-family: "Rubik Vinyl", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 100 to 900*/
+
+.saira-footer {
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
