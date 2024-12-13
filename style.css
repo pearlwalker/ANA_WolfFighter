@@ -13,15 +13,21 @@
     border: 1px black solid;
     background-color: black;
     display: grid;
-    grid-template-columns: 10% 40% 1% 45% 4%;
+    grid-template-columns: 10% 30% 16% 40% 4%;
     grid-template-rows: 25% 25% 25% 25%;
     margin-bottom: 0.5rem;
 }
 
 #ana_image {
     display: grid;
-    grid-area: 3 /2 / 4/ 3;
-    width: 100px;
+    grid-area: 3 /2 / 4/ 4;
+    width: 30%;
+}
+
+#wolf_image {
+    display: grid;
+    grid-area: 2 / 3/ 4 / 5;
+    width: 100%;
 }
 
 body {

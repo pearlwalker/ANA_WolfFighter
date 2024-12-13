@@ -4,13 +4,25 @@ function buttonClick() {
 }
 
 function startGame() {
+    //remove start button so user can't 2x click
     let startButton = document.getElementById("startButton");
     startButton.remove();
+
+    //background change to show game start
     let contentBox = document.getElementById("contentbox");
     contentBox.style.backgroundColor = "white";
+
+    //create ANA image element
     let anaImage = document.createElement("img");
-    anaImage.src = "media/ana/ana-0.png";
+    anaImage.src = "media/sprites/ana/ana-2.png";
     anaImage.id = "ana_image";
-    anaImage.width = 100;
+
+    //creat wolf image element
+    let wolfImage = document.createElement("img");
+    wolfImage.src = "media/sprites/wolf/A-1.png";
+    wolfImage.id = "wolf_image";
+
+    //add to contentBox
     contentBox.appendChild(anaImage);
+    contentBox.appendChild(wolfImage);
 }
