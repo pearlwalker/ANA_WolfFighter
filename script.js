@@ -17,12 +17,18 @@ function startGame() {
     anaImage.src = "media/sprites/ana/ana-2.png";
     anaImage.id = "ana_image";
 
-    //creat wolf image element
+    //create wolf image element
     let wolfImage = document.createElement("img");
     wolfImage.src = "media/sprites/wolf/A-1.png";
     wolfImage.id = "wolf_image";
 
+    //create background
+    let backdrop = document.createElement("img");
+    backdrop.src = "media/sprites/other/background1.png";
+    backdrop.id = "background_image";
+
     //add to contentBox
     contentBox.appendChild(anaImage);
     contentBox.appendChild(wolfImage);
+    contentBox.appendChild(backdrop);
 }
