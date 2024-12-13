@@ -28,6 +28,10 @@ let sfx_punch2 = new Audio("media/audio/sail2.mp3");
 let sfx_punch3 = new Audio("media/audio/sail3.mp3");
 let sfx_punch4 = new Audio("media/audio/sail3-2.mp3");
 
+let sfx_woof1 = new Audio("media/audio/woo1.mp3");
+let sfx_woof2 = new Audio("media/audio/woo2.mp3");
+
+
 function buttonClick() {
     console.log("button clicked!");
     startGame();
@@ -139,6 +143,12 @@ function unpunch() {
     } else {
         wolf.src = wolf.src = "media/sprites/wolf/A-1.png";
         ana.src = "media/sprites/ana/ana-2.png";
+        let random = Math.random();
+        if (random < 0.2) {
+            sfx_woof2.play();
+        } else {
+            sfx_woof1.play();
+        }
     }
 
 
