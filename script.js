@@ -55,10 +55,19 @@ function partOne() {
             }
         }
     })
+    document.addEventListener("keyup", function (event) {
+        if (event.keyCode == 32) {
+            if (phase === 1) {
+                unpunch();
+            }
+        }
+    })
 }
 
 function punch() {
     console.log("punch!");
+    ana.src = "media/sprites/ana/punch-ana-2.png";
+    wolf.src = wolf.src = "media/sprites/wolf/A-2.png";
     if (health === 1) {
         healthbar.src = "media/sprites/other/healthbar_2-7.png";
         health = 2;
@@ -77,5 +86,20 @@ function punch() {
     } else if (health === 6) {
         healthbar.src = "media/sprites/other/healthbar_7-7.png";
         health = 7;
+    } else if (health === 7) {
+        partTwo();
     }
 }
+
+function unpunch() {
+    console.log("unpunch!");
+    wolf.src = wolf.src = "media/sprites/wolf/A-1.png";
+    ana.src = "media/sprites/ana/ana-2.png";
+
+}
+function partTwo() {
+    phase = 2;
+    health = 0;
+    wolf.src = wolf.src = "media/sprites/wolf/B-1.png";
+    ana.src = "media/sprites/ana/ana-2.png";
+} 

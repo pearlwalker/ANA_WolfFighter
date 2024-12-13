@@ -21,7 +21,7 @@
 #ana {
     display: grid;
     grid-area: 3 /2 / 4/ 4;
-    width: 30%;
+    width: 40%;
     z-index: 2;
 }
 
